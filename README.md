@@ -8,7 +8,7 @@ All results shown on the page are fetched from ergast.com API.
 
 #Architecture
 
-The app is a SPA built with Angular 4. It has a main AppComponent which controls the data shown on the page and two presentational components ChampionsListComponent and SeasonResultsComponent that display their corresponding data. Two services were implemented to fetch and filter the data obtainer from the backend, API component and Filters service.
+The app is a SPA built with Angular 4. It has a main AppComponent which controls the data shown on the page and two presentational components ChampionsListComponent and SeasonResultsComponent that display their corresponding data. Two services were implemented to fetch and filter the data obtainer from the backend, APIService and DataFiltersService.
 
 The data flows from the main component to it's children, presentational components send events through their outputs to notify the parent that data updates are required. 
 
@@ -26,5 +26,5 @@ Access the app by opening localhost:4200 in your browser
 
 #Tests
 
-Test can be run with ng test
+Tests can be run with ng test
 
