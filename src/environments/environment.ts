@@ -4,5 +4,9 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiHost: 'http://ergast.com/api',
+  championsListOffset: 55,
+  championsListLimit: 11,
+  seasonResultsPageSizeOptionsOffset: 5
 };
