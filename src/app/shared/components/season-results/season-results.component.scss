@@ -1,0 +1,82 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+.season-results-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 10px;
+  padding: 0;
+}
+
+.season-results-title {
+  font-weight: bold;
+  padding: 10px;
+  background: #141414;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+ }
+
+.season-results-subtitle {
+  padding: 10px;
+  background: #141414;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0;
+ }
+
+.season-results-content {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.season-results-list {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.season-results-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.race-title {
+  text-align: center;
+  padding: 10px;
+  background: #546e7a;
+  color: #FFEB3B;
+  font-weight: bold;
+}
+
+.race-winner {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.no-results-message {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.championship-round {
+  color: #ffffff;
+}
+
+.season-champion {
+  background: #f44336;
+  color: #ffffff;
+}

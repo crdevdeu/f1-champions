@@ -1,0 +1,26 @@
+<mat-card class="season-results-container">
+  <mat-card-title class="season-results-title">Season results</mat-card-title>
+  <mat-card-subtitle *ngIf="seasonResults.season !== 0" class="season-results-subtitle">
+    {{ seasonResults.season }}
+  </mat-card-subtitle>
+  <mat-card-content class="season-results-content">
+    <div class="no-results-message" *ngIf="seasonResults.races.length === 0">
+      <h2>Select a driver to check the season results</h2>
+    </div>
+    <mat-list class="season-results-list" *ngIf="seasonResults.races.length > 0">
+      <mat-list-item *ngFor="let race of seasonResults.races">
+        <div class="season-results-item">
+          <div class="race-title">{{ race.raceName }} <span class="championship-round">Round {{ race.round }}</span></div>
+          <div class="race-winner" [ngClass]="{'season-champion': race.winner.driverId === championData.driverId}">
+            {{ race.winner.givenName }} {{ race.winner.familyName }}
+          </div>
+        </div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </mat-list>
+    <mat-paginator [length]="seasonResults.totalItems"
+                   [pageSizeOptions]="options.pageSizeOptions"
+                   *ngIf="seasonResults.races.length > 0"
+                   (page)="pageChanged($event)"></mat-paginator>
+  </mat-card-content>
+</mat-card>
