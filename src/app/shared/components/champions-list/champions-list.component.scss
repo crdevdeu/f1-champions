@@ -1,0 +1,52 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+.champions-list-container {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+  flex-direction: column;
+  padding: 0;
+}
+
+.champions-list-title {
+ font-weight: bold;
+ padding: 10px;
+ background: #f44336;
+ color: #ffffff;
+ text-align: center;
+ margin: 0;
+}
+
+.champions-list-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.champions-list {
+  padding-top: 0;
+}
+
+.championship-year {
+  font-weight: bold;
+}
+
+.champions-list-content {
+  min-height: 350px;
+  padding: 0;
+}
+
+.selected-champion {
+  background: #E0E0E0;
+}
+
+.loading-spinner {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

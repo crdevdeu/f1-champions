@@ -1,0 +1,16 @@
+<mat-card class="champions-list-container">
+  <mat-card-title class="champions-list-title">Champions</mat-card-title>
+  <mat-card-content class="champions-list-content">
+    <div class="loading-spinner" *ngIf="loading">
+        <mat-spinner color="warn"></mat-spinner>        
+    </div>
+    <mat-nav-list class="champions-list" *ngIf="!loading">
+      <a *ngFor="let champion of championsList"
+         [ngClass]="{'selected-champion': champion.driverData.driverId === selectedDriver.driverData.driverId && champion.season === selectedDriver.season }"
+         (click)="onChampionSelection(champion)" mat-list-item>
+        <span class="championship-year">{{ champion.season }}&nbsp;</span>
+        {{ champion.driverData.givenName }} {{ champion.driverData.familyName }}
+      </a>
+    </mat-nav-list>
+  </mat-card-content>
+</mat-card>
