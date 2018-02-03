@@ -1,3 +1,7 @@
+# F1-champions
+
+Angular 4 SPA to visualize F1 champions data fetched from ergast.com API
+
 ### Functionality
 
 The App shows a list of F1 champions of the years 2005-2015. Clicking on a champions name will show a list of races results for that season with the winner of the race, round and the race name. If the winner of the race won the championship that season his name will be hightlighted. The list of season results is paginated and allows the user to control the amount of results on the list.
